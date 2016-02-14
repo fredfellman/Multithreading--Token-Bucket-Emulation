@@ -1,0 +1,70 @@
+Documentation for Warmup Assignment 2
+=====================================
+
++-------+
+| BUILD |
++-------+
+
+Comments: my402list.c and warmup2.c build and run successfully. No error encountered while running the grading guidelines.
+
++---------+
+| GRADING |
++---------+
+
+Basic running of the code : 100 out of 100 pts
+
+Missing required section(s) in README file : None
+Cannot compile : (Compilation successful)
+Compiler warnings : (None, used -Wall flag in the Makefile submitted by me for warmup2 executable)
+"make clean" : (executed successfully and all the object and executable files are removed)
+Segmentation faults : (None encountered while running all the grading guidelines)
+Separate compilation : (Generated two seperate files my402list.c and warmup2.c, their object files are linked via Makefile submitted by me. Not much user generated .h files are used)
+Using busy-wait : (Checked by using top statement, it does not take high CPU percentage, more than 1%)
+Handling of commandline arguments:
+    1) -n : (yes)
+    2) -lambda : (yes)
+    3) -mu : (yes)
+    4) -r : (yes)
+    5) -B : (yes)
+    6) -P : (yes)
+Trace output :
+    1) regular packets: (regular packets have exactly 6 lines of trace and contain correct information)
+    2) dropped packets: (1 line of trace and contain correct information)
+    3) removed packets: (contain correct removal information)
+    4) token arrival (dropped or not dropped): (have 1 line of trace and contain correct information)
+Statistics output :
+    1) inter-arrival time : (correct)
+    2) service time : (correct)
+    3) number of customers in Q1 : (correct)
+    4) number of customers in Q2 : (correct)
+    5) number of customers at a server : (correct)
+    6) time in system : (correct)
+    7) standard deviation for time in system : (correct)
+    8) drop probability : (correct)
+Output bad format : (the format is strictly followed as stated in the problem statement)
+Output wrong precision for statistics (should be 6-8 significant digits) : (%.6g is used for 6 significant digits)
+Large service time test : (handled)
+Large inter-arrival time test : (handled)
+Tiny inter-arrival time test : (handled)
+Tiny service time test : (handled)
+Large total number of customers test : (handled)
+Large total number of customers with high arrival rate test : (handled)
+Dropped tokens test : (handled)
+Cannot handle <Cntrl+C> at all (ignored or no statistics) : (handled)
+Can handle <Cntrl+C> but statistics way off : (handled)
+Not using condition variables and do some kind of busy-wait : (No)
+Synchronization check : (Used mutex while making changes in global variables)
+Deadlocks : (None encountered)
+
++------+
+| BUGS |
++------+
+
+Comments: No bugs encountered while running both positive and negative test cases.
+
++-------+
+| OTHER |
++-------+
+
+Comments on design decisions: Divided the code in functions and modules. Tried not to use many inbuilt functions and checked the return value of the functions when used.
+Comments on deviation from spec: Followed all the mentioned specifications in the problem statement
